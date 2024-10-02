@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,88 +15,60 @@
             text-align: center;
             background-color: #f0f0f0;
         }
-
         video {
             max-width: 90%;
             max-height: 90%;
-            width: auto;
-            /* Fallback size */
-            height: auto;
-            /* Maintains aspect ratio */
-            margin-bottom: 10px;
-            /* Add margin below the video */
+            width: auto; /* Fallback size */
+            height: auto; /* Maintains aspect ratio */
+            margin-bottom: 10px; /* Add margin below the video */
         }
-
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            /* Center align items */
+            align-items: center; /* Center align items */
         }
-
         .headings {
-            display: flex;
-            /* Use flexbox for alignment */
-            justify-content: space-between;
-            /* Space between the headings */
-            width: 90%;
-            /* Full width, adjust as necessary */
-            margin-top: 10px;
-            /* Space above the headings */
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space between the headings */
+            width: 90%; /* Full width, adjust as necessary */
+            margin-top: 10px; /* Space above the headings */
         }
-
         h3 {
-            margin: 0;
-            /* Remove space around headings */
-            flex: 1;
-            /* Make headings take equal space */
-            text-align: left;
-            /* Center the text inside each heading */
+            margin: 0; /* Remove space around headings */
+            flex: 1; /* Make headings take equal space */
+            text-align: center; /* Center the text inside each heading */
         }
-
         .headings1 {
-            margin-top: 20px;
-            /* Add space above the first heading */
-            text-align: left;
-            /* Align first heading to the left */
+            text-align: left; /* Align first heading to the left */
         }
-
         .headings2 {
-            margin-top: 30px;
-            /* Add space above the second heading */
-            text-align: center;
-            /* Align second heading to the right */
+            text-align: right; /* Align second heading to the right */
         }
-
-
         @media (max-width: 768px) {
             body {
                 padding: 20px;
             }
-
             video {
                 max-width: 100%;
                 max-height: 50%;
+                width: auto; /* Fallback size */
+                height: auto; /* Maintains aspect ratio */
             }
-
             h1 {
                 font-size: 1.5em;
             }
         }
-
         @media (max-width: 480px) {
             video {
                 max-width: 100%;
                 max-height: 40%;
             }
-
             h1 {
                 font-size: 1.2em;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <video autoplay loop muted>
@@ -111,5 +82,4 @@
         <h3 class="headings2">Spatial maps of hotspots in the 2D plane</h3>
     </div>
 </body>
-
 </html>
